@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Oleo+Script+Swash+Caps:wght@400;700&family=Tiro+Gurmukhi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.fix-width{
+    width: 1240px;
+    margin: auto;
+}
+.clear-fix::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* main-css */
+
+.header-section{
+    background: url(./img/photo-1471879832106-c7ab9e0cee23.jpg) no-repeat center center;
+    background-size: cover;
+}
+.header-content{}
+.header-content .header-left-logo{
+    width: 50%;
+}
+.header-content .header-left-logo img{
+    padding: 21px 0px;
+}
+
+.header-content .header-right-menu{
+    width: 50%;
+}
+.header-manu-2 {
+    display: flex;
+    align-items: center;
+}
+
+.header-right-menu ul {
+    
+}
+.header-right-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-right-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    color: #fff;
+    transition: .5s;
+    z-index: 1;
+    
+}
+.header-right-menu ul li a:hover{
+     color: #af4444;
+}
+
+.header-title h2 {
+    text-align: center;
+    padding: 263px;
+    text-transform: capitalize;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.header-title h2::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 249px;
+    left: 282px;
+    font-size: 44px;
+    color: #af4444;
+}
+.header-title h2::after {
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 262px;
+    /* left: 282px; */
+    font-size: 44px;
+    color: #af4444;
+    right: 277px;
+}
+
+
+
+/* about-section */
+
+.about-section{}
+.about-content {
+    padding: 50px 0px;
+}
+
+.about-left-img{
+    width: 30%;
+}
+.about-left-img img {
+    max-width: 100%;
+    width: 214px;
+    border: 2px solid red;
+    position: relative;
+    top: 86px;
+}
+
+.about-right-content{
+    width: 70%;
+}
+
+.about-title{}
+.about-title h1 {
+    text-align: center;
+    padding: 14px 0px;
+    text-transform: uppercase;
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: 400;
+    font-size: 50px;
+    opacity: .7;
+}
+.about-title li {
+    list-style: none;
+    margin: 21px 0px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+/* service-section */
+
+.service-section {
+    background: #2e3e4e;
+    padding: 8px 0px;
+}
+
+.service-content{}
+
+.service-content h1 {
+    font-size: 55px;
+    margin: 41px 0px;
+    text-transform: uppercase;
+    color: #ef664d;
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: 100;
+}
+
+.service-content-left {
+    width: 30.3%;
+    margin-right: 3%;
+}
+
+.service-content-left .icon {
+    font-size: 20px;
+    background: #ef664c;
+    padding: 12px;
+    margin: 20px 0px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 2px 18px 2px 18px;
+}
+.service-content-left h2 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    font-style: oblique;
+    opacity: .8;
+    margin: 10px 0px;
+}
+
+.service-content-left li {
+    line-height: 38px;
+    list-style: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+    opacity: .7;
+}
+.service-content-left li::before{
+    content: " \f560";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: red;
+    width: 200px;
+   
+}
+.b-tn{}
+
+.b-tn .b-btn {
+    border: none;
+    background-color: #3911ee;
+    padding: 7px 26px;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin: 13px 0px;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+   z-index: 1;
+   
+}
+
+
+/* hover-pat */
+.b-tn .b-btn::before{
+    content: "";
+   z-index: -1;
+    width:0;
+    height: 50%;
+    position: absolute;
+    left:0;
+    top: 0;
+    transition: .5s;
+    border-radius:5px ;
+    
+}
+.b-tn .b-btn::after{
+    content: "";
+   z-index: -1;
+    width:0;
+    height: 50%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    transition: .5s;
+    border-radius:5px ;   
+}
+
+.b-tn .b-btn:hover::after{
+    background-color: rgb(7, 17, 14);
+    width: 100%;
+}
+
+.b-tn .b-btn:hover::before{
+    background: rgb(206, 12, 12);
+    width: 100%;
+    
+}
+
+
+
+
+
+/* hover-pat */
+
+
+
+
+/* contrac-section */
+
+.contrac-section{
+    padding: 50px 0px;
+}
+.contrac-content h3 {
+    font-size: 49px;
+    text-transform: uppercase;
+    margin: 28px 0px;
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: 100;
+    opacity: .8;
+}
+
+.contrac-form form .stayle {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+    width: 58%;
+    text-transform: capitalize;
+    font-size: 33px;
+}
+
+.contrac-form .baton .sbmt {
+    background: #c73f3f;
+    font-size: 28px;
+    text-transform: capitalize;
+    padding: 5px 124px;
+    border: none;
+    border-radius: 5px;
+    margin: 35px 0px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.sbmt::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    content: "";
+    transition: .5s;
+    z-index: -1;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+.sbmt:hover::before{
+     background: #3911ee;
+     width: 50%;
+}
+
+.sbmt::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    content: "";
+    transition: .5s;
+    z-index: -1;
+    border-radius: 0px 5px 5px 0px;
+}
+.sbmt:hover::after{
+     background: #11ee99;
+     width: 50%;
+}
+
+
+
+
+
+
+
+/* footer-section */
+.fotter-section{
+    background-color: gray;
+    padding: 30px 0px;
+}
+.fotter-content{
+    
+}
+.fotter-content p {
+    color: #fff;
+    background: gray;
+    text-transform: capitalize;
+    font-size: 22px;
+    opacity: .8;
+}
+.fotter-content p span{
+    color: #c73f3f;
+}
+
